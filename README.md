@@ -1,4 +1,4 @@
-# Mockup Website Project
+# Website Project
 
 This project contains simple HTML and CSS mockup pages for a basic website. It demonstrates how to create different pages (Home, Product, Map, Contact) with navigation between them. Bootstrap 5 is used in some pages for styling and layout.
 
