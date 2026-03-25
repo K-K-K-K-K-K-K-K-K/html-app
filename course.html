@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Online Study Course</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 900px;
+      margin: 50px auto;
+      background: #fff;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #007BFF;
+    }
+    .course-description {
+      text-align: center;
+      font-size: 16px;
+      color: #555;
+      margin-bottom: 30px;
+    }
+    .modules {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .module-card {
+      background: #f9f9f9;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      padding: 20px;
+      text-align: center;
+      transition: transform 0.2s ease;
+    }
+    .module-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    .module-card h3 {
+      margin-bottom: 10px;
+      color: #007BFF;
+    }
+    .module-card p {
+      font-size: 14px;
+      color: #555;
+    }
+    .home-button {
+      display: block;
+      width: fit-content;
+      margin: 30px auto 0;
+      background: #007BFF;
+      color: #fff;
+      padding: 12px 20px;
+      border-radius: 4px;
+      text-decoration: none;
+      font-size: 16px;
+    }
+    .home-button:hover {
+      background: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Online Study Course</h1>
+    <p class="course-description">
+      Welcome to our online study course! Learn at your own pace with structured modules designed to help you succeed.
+    </p>
+    <div class="modules">
+      <div class="module-card">
+        <h3>Introduction</h3>
+        <p>Get started with an overview of the course and learning objectives.</p>
+      </div>
+      <div class="module-card">
+        <h3>Module 1: Basics</h3>
+        <p>Learn the fundamentals and build a strong foundation.</p>
+      </div>
+      <div class="module-card">
+        <h3>Module 2: Intermediate</h3>
+        <p>Dive deeper into key concepts with practical examples.</p>
+      </div>
+      <div class="module-card">
+        <h3>Module 3: Advanced</h3>
+        <p>Master advanced topics and apply your knowledge in projects.</p>
+      </div>
+    </div>
+    <a href="index.html" class="home-button">Home Page</a>
+  </div>
+</body>
+</html>
