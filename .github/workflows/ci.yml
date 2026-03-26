@@ -7,9 +7,12 @@ on:
             - 'bugfix/**'
             - 'chore/**'
 
-            
 jobs:
-    job-1:
-        runs-on: unbuntu-lastest
-        steps:
-            - run: echo "Hello Github Action"
+  job-1:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Hello GitHub Action 1"
+  job-2:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Hello GitHub Action 2"
