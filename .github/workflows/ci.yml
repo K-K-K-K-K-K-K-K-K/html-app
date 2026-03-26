@@ -6,13 +6,23 @@ on:
             - 'feature/**'
             - 'bugfix/**'
             - 'chore/**'
-
+env:
+    SERVER_IP: 10.0.254.5
+    COMPANY_NAME: 'NTPLC'
+    REPO_NAME: ${{github.repository}}
 jobs:
   job-1:
     runs-on: ubuntu-latest
+    env:
+        PHONE: '0999809890'
     steps:
-      - run: echo "Hello GitHub Action 1"
+        - run: echo "${{github.actor}} ${{env.PHONE}}"
+        - run: echo "Hello ${{env.COMPANY_NAME}}"
+        - run: echo "Hello ${{vars.REPO_NAME}}"
+        - run: echo "Hello ${{vars.APP_NAME}}"
+        - run: echo "Hello ${{secrets.API_KEY}}"
   job-2:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "Hello GitHub Action 2"
+      - run: echo "Hello ${{env.COMPANY_NAME}}"
+      - run: echo "Hello ${{env.SERVER_IP}}"
