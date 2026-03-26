@@ -19,7 +19,7 @@ jobs:
     steps:
         - run: echo "${{github.actor}} ${{env.PHONE}}"
         - run: echo "Hello ${{env.COMPANY_NAME}}"
-        - run: echo "Hello ${{vars.REPO_NAME}}"
+        - run: echo "Hello ${{env.REPO_NAME}}"
         - run: echo "Hello ${{vars.APP_NAME}}"
         - run: echo "Hello ${{secrets.API_KEY}}"
   job-2:
